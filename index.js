@@ -135,6 +135,7 @@ const gameBoard = (() => {
       })
     } else if (!board.includes("")) {
       gameStatus.textContent = `draw`
+      openModal()
       playAgainBtn.addEventListener("click", () => {
         restartGame()
         closeModal()
