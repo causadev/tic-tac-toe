@@ -43,7 +43,7 @@ const gameBoard = (() => {
 
 	const playAgain = () => {
 		gameActive = true;
-		displayController.currentPlayer = Player("x");
+		displayController.currentPlayer.mark = "x"
 		cells.forEach((cell) => cell.textContent = "");
 		board.fill(null);
 		displayController.closeModal();
@@ -91,7 +91,7 @@ const displayController = (() => {
 		gameBoard.board.fill(null)
 		gameBoard.cells.forEach((cell) => cell.textContent = "")
 		activePlayer()
-		currentPlayer = Player("x")
+		currentPlayer.mark = "x"
 		gameActive = true;
 	}
 
