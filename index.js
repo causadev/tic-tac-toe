@@ -55,7 +55,7 @@ const gameBoard = (() => {
       gameActive = false
     } else {
       changePlayer()
-      displayController.activePlayer()
+      activePlayer()
     }
   }))
 
